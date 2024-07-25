@@ -9,28 +9,16 @@ const ToDoScreen = ()=>{
     const {taskList} = useContext(TaskContext);
     const navigate = useNavigate();
     
-    // let addNewTask = (task) =>{
-    //     setTaskList([...taskList, {...task, createdDate:new Date() }]);
-    // };
 
     return (
         <>
         
-        <div className="screen">
+        <div className="bg-slate-900 screen">
             <h1 className="ui heading center">To Do List</h1>
             <div>
                 <button
                     onClick={(e)=>{
                         navigate("/add-task");
-
-                        // setTaskList([
-                        //     ...taskList,
-                        //     {
-                        //         title: "Go to gym",
-                        //         description: "Going to gym is good for muscle growth.",
-                        //         createdDate: new Date(),
-                        //     },
-                        // ]);
                     }}
                     className = "ui secondary button"
                     >
@@ -44,7 +32,6 @@ const ToDoScreen = ()=>{
                 </div>
                 </section>
             </div>
-            {/* <AddTask onSubmit={addNewTask}/> */}
         </div>
         </>
     );

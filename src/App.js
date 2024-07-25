@@ -22,7 +22,7 @@ const App = ()=>{
     // const [tasks, setTasks] = useState([]);
 
     return (
-        <TaskProvider>
+        <TaskProvider className="bg-slate-900">
             <RouterProvider router={router} />
         </TaskProvider>
     );
